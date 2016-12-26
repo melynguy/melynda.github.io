@@ -14,19 +14,43 @@ col s6 {
 }
 
 
-header {
-  background: 
-    linear-gradient(
-      rgba(92, 66, 244, 0.5),
-      rgba(92, 66, 244, 0.1)
-    ),
-    url("/img/lines.jpg");
-  background-size: 100% auto;
-  height: auto;
-  position: relative;
+.jumbotron {
+    background-color: mediumpurple;
+    padding-top: 50px;
+    padding-left: 30px;
 }
 
 .container {
     margin-top: 50px;
     
+}
+
+
+@media (min-width: 768px) {
+    header {
+        background: 
+        linear-gradient(
+            rgba(92, 66, 244, 0.5),
+            rgba(92, 66, 244, 0.1)
+        ),
+        url("/img/lines.jpg");
+        background-size: 100% auto;
+        height: 500px;
+        position: relative;
+        background-repeat: no-repeat;
+    }
+
+    #header-quote {
+        padding-top: 50px;
+    }
+
+    #header-quote p{
+        width: 600px;
+    }
+}
+
+@media (min-width: 992px) {
+}
+
+@media (min-width: 1200px) {
 }
