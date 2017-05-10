@@ -4,102 +4,35 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta charset="UTF-8">
 
-    <title>Portfolio</title>
+    <!-- for FF, Chrome, Opera -->
+    <link rel="icon" type="image/png" href="img/face-24x24.png" sizes="24x24">
+    <link rel="icon" type="image/png" href="img/face-48x48.png" sizes="48x48">
 
-    <!-- Bootstrap stylesheet CDN -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <!-- for IE 
+    <link rel="icon" type="image/x-icon" href="/assets/favicons/favicon.ico" >
+    <link rel="shortcut icon" type="image/x-icon" href="/assets/favicons/favicon.ico"/>
+    -->
+
+    <title>Melynda</title>
+
+    <!-- MDL stylesheet -->
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+
+    <link rel="stylesheet" href="https://code.getmdl.io/1.3.0/material.indigo-pink.min.css">
+
     <link rel="stylesheet" href="css/main.css">
 
 </head>
 <body>
-    <!-- 
-    background image
-    <img class="responsive-img" src="img/background.jpg">
-    -->
 
-    <!--start of the responsive navigation bar-->
-    <nav class="navbar navbar-default navbar-fixed-top">
-        <!--container-fluid class adds a little padding, but doesn't constrain width-->
-        <div class="container-fluid">
-            <!--navbar header, which includes hamburger menu button and branding-->
-            <div class="navbar-header">
-                <!--hamburger menu button, shown only on narrow screens.
-                `data-target` specifies a selector for the element containing the
-                navigation links you want to hide/show when the button is clicked.
-                `data-toggle` tells Bootstrap to toggle the `collapse` state,
-                thereby hiding/showing the element selected by `data-target`.
-                in this case, the selector is #site-nav-links, which selects
-                the element with id="site-nav-links" (just like CSS selectors)
-                -->
-                <button type="button" 
-                    class="navbar-toggle collapsed" 
-                    data-target="#site-nav-links" 
-                    data-toggle="collapse"  
-                    aria-expanded="false">
 
-                    <!--the hamburger icon itself, which Bootstrap creates
-                    by stacking three bar icons on top of each other
-                    the `sr-only` element is for screen readers-->
-                    <span class="sr-only">toggle navigation</span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                </button>
+<main>
 
-                <!-- 
-                branding content, which always remains visible
-                <a class="navbar-brand" href="#">
-                    Melynda
-                </a>
-                -->
+</main>
 
-            </div>
 
-            <!--navigation links, which are always visible on wide sceens,
-            but go into a drop-down menu on narrow screens-->
-            <div class="collapse navbar-collapse" id="site-nav-links">
-                <!--the `navbar-right` class makes the links right-aligned on desktop-->
-                <ul class="nav navbar-nav navbar-right">
-                    <li><a href="#portfolio">Portfolio</a></li>
-                </ul>
-            </div>
-        
-        </div> <!--end of .container-fluid-->
-    </nav>
 
-    <!--rest of the page content goes here-->
-    <header class="jumbotron">
-        <div class="container" id="header-quote">
-            <blockquote>
-                <p>"Imagine two worlds, one with you and one without you. What's the difference between the two worlds? Maximize the difference. That's the meaning of your life."</p>
-                <p>- Kai-Fu Lee</p>
-            </blockquote>
-            <p><a class="btn btn-primary btn-lg" href="#" role="button">Resume</a></p>
-        </div>
-    </header>
 
-    <section>
-        <div class="container">
-            <div class="row">
-                <div class="col-sm-6 col-md-3">
-                    <h2>Column 1</h2>
-                </div>
-                <div class="col-sm-6 col-md-3">
-                    <h2>Column 2</h2>
-                </div>
-                <div class="col-sm-6 col-md-3">
-                    <h2>Column 3</h2>
-                </div>
-                <div class="col-sm-6 col-md-3">
-                    <h2>Column 4</h2>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <p class="container alert alert-warning">Danger Will Robinson, Danger!
-    </p>
 
 
 
@@ -109,11 +42,14 @@
     and interaction. sometimes users just wants to click a link and move on,
     so we don't want to force them to wait while large JavaScript files are
     downloaded, parsed, and executed.-->
+
     <!--jQuery library CDN link from http://code.jquery.com/-->
     <script src="http://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
     
-    <!--Bootstrap JavaScript library CDN link from http://getbootstrap.com/getting-started/-->
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+    <!-- MDL JS CDN-->
+    <script defer src="https://code.getmdl.io/1.3.0/material.min.js"></script>
+
+    <link rel="stylesheet" href="js/index.js">
 
 </body>
 </html>
